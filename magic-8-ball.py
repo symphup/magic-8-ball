@@ -21,6 +21,7 @@ def play(user_name, answers, continue_prompts):
 
         question = input(f"Okay {user_name}, what is your question? ")
         if not is_valid_question(question):
+            print("Come back if you have any questions!")
             break
 
         print(choice(answers))
